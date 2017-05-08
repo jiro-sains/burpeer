@@ -1,0 +1,8 @@
+ <h1>Enter Your Workout Details</h1>
+  <%= simple_form_for @activity do |f| %>
+    <%= f.input :date %>   
+    <%= f.input :amount %>
+    <%= f.input :note %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
