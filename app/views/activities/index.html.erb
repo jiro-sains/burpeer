@@ -1,9 +1,10 @@
-<h2>Welcome to your daily burpee challenge</h2>
+<h3>Welcome to your daily burpee challenge</h3>
+<br />
 
 <% @activities.each do |activity| %>
   <div class="card col-3 offset-1">
-    <h4><%= activity.date %></h4><br />
-    <p>amount: <%= activity.amount %></p><br />
-    <p>notes: <%= activity.note %></p><br />
+    <h5><%= activity.date %></h5>
+    <p><b>amount:</b> <%= activity.amount %></p>
+    <p><b>notes:</b> <%= activity.note %></p>
   </div>
 <% end %>
